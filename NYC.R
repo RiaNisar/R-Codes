@@ -1,0 +1,8 @@
+nyc <- read.csv("C:\\Users\\admin\\Desktop\\Kaggle Datasets\\nyc-rolling-sales.csv", header=TRUE, sep=",")
+View(nyc)
+head(nyc,17)
+tail(nyc,28)
+names(nyc)
+str(nyc)
+summary(nyc)
+fivenum(nyc['COMMERCIAL.UNITS'], na.rm = TRUE)

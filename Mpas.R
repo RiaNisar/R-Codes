@@ -1,0 +1,7 @@
+install.packages("maps")
+data <- read.csv("C:/Users/admin/Desktop/Kaggle Datasets/worldcities.csv")
+df <- data.frame(data)
+names(df)
+library(maps)
+map(database = "world")
+points(x=df$lat[1:500], y=df$lng[1:500], col="red")
